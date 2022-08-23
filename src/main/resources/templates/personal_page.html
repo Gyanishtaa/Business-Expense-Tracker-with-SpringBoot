@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal page</title>
+</head>
+<body>
+<h1>Welcome </h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Month</th>
+        <th>Revenue</th>
+        <th>Expenses</th>
+
+    </tr>
+
+    <tr >
+        <td th:text="${idattr}">Id</td>
+        <td th:text="${monthattr}">Month</td>
+        <td th:text="${revenueattr}">Revenue</td>
+        <td th:text="${expensesattr}">Expenses</td>
+    </tr>
+</table>
+<a href="/">navigate to main page</a>
+</body>
+</html>

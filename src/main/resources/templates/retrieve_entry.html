@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>register page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div class="form">
+    <form method="post" action="/retrieve" th:object="${retrieveRequest}">
+        <h2>Retrieve Record by Month</h2>
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="month" placeholder="Month" required><!-- comment -->
+        </div><!-- comment -->
+
+        <div class="input-box">
+            <input type="submit" name="retrieverequest" value="Retrieve"><!-- comment -->
+        </div><!-- comment -->
+
+        <a href="/">navigate to main page</a>
+    </form>
+</div>
+</body>
+</html>
